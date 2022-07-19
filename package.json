@@ -1,0 +1,45 @@
+{
+  "name": "luna",
+  "version": "1.0.0",
+  "description": "A simple css framework for myself",
+  "author": "James Moore",
+  "license": "MIT",
+  "main": "index.scss",
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "scripts": {
+    "build": "rimraf css && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-sass": "node-sass --output-style expanded src/index.scss ./css/index.css",
+    "build-autoprefix": "postcss --use autoprefixer --map --output ./css/index.css ./css/index.css",
+    "build-cleancss": "cleancss -o ./css/index.min.css ./css/index.css",
+    "start": "npm run build-sass -- --watch"
+  },
+  "files": [
+    "css",
+    "src",
+    "README.md"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "clean-css-cli": "^5.6.1",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^10.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/James-N-M/luna.git"
+  },
+  "bugs": {
+    "url": "https://github.com/James-N-M/luna/issues"
+  },
+  "homepage": "https://github.com/James-N-M/luna#readme"
+}
