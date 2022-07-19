@@ -1,6 +1,4 @@
 <p align="center">
-    <img height="150" width="150" src="https://user-images.githubusercontent.com/6562688/179643940-17c2a4d4-543b-4d49-b782-71ca3f9bee71.png" />
-    <br /><br />
     A simple css framework for myself
 </p>
 
