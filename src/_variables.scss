@@ -32,6 +32,8 @@ $base-border-radius: 20px !default;
 // box-shadow
 $base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
 
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+
 // font sizes
 $base-font-size: 1rem !default;
 $font-size-sm: $base-font-size * 0.75 !default;

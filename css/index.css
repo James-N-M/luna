@@ -3719,6 +3719,69 @@ img {
   border-width: 1px;
 }
 
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.timeline .timeline-body {
+  position: relative;
+  border-radius: 0 8px 8px 0;
+  padding: 0;
+}
+
+.timeline .timeline-body:after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: lightgray;
+  position: absolute;
+  left: -5px;
+  top: 0;
+}
+
+.timeline .timeline-body .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-body .timeline-item:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 4px solid #1ac886;
+  background-color: #1ac886;
+  position: absolute;
+  left: -16px;
+  top: 0px;
+  z-index: 9;
+}
+
+.timeline .timeline-body .timeline-item .content {
+  margin: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid lightgray;
+}
+
+.timeline .timeline-body .timeline-item .content .time {
+  top: 4px;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+@media (min-width: 1200px) {
+  .timeline .timeline-body .timeline-item .content .time {
+    position: absolute;
+    left: -85px;
+  }
+}
+
+.timeline .timeline-body .timeline-item .content .title {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
 .p-0 {
   padding: 0;
 }
@@ -4062,3 +4125,5 @@ img {
 .font-xxl {
   font-size: 3rem;
 }
+
+/*# sourceMappingURL=index.css.map */
