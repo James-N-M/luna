@@ -2,9 +2,10 @@
   "name": "luna",
   "version": "1.0.0",
   "description": "A simple css framework for myself",
-  "author": "James Moore",
+  "author": "James-N-M",
   "license": "MIT",
-  "main": "index.scss",
+  "main": "src/index.scss",
+  "unpkg": "css/index.css",
   "keywords": [
     "css",
     "sass",
@@ -23,7 +24,8 @@
   "files": [
     "css",
     "src",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "devDependencies": {
     "autoprefixer": "^10.4.7",
