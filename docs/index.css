@@ -3741,6 +3741,19 @@ img {
   top: 0;
 }
 
+.timeline .timeline-body .start:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 4px solid #326dee;
+  background-color: #326dee;
+  position: absolute;
+  left: -12px;
+  bottom: 0px;
+  z-index: 9;
+}
+
 .timeline .timeline-body .timeline-item {
   position: relative;
 }
